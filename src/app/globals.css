@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F7F4EE;
+  --color-cream-dark: #EDE8DE;
+  --color-forest: #223A2F;
+  --color-forest-dark: #192C23;
+  --color-mustard: #EAA222;
+  --color-mustard-hover: #D8931A;
+  --color-terracotta: #E05A47;
+  --color-charcoal: #141414;
+  --color-charcoal-card: #1C1C1C;
+  
+  --font-serif: 'Fraunces', 'Playfair Display', Didot, 'Bodoni MT', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --cream: #F7F4EE;
+  --cream-dark: #EDE8DE;
+  --forest: #223A2F;
+  --forest-dark: #192C23;
+  --mustard: #EAA222;
+  --terracotta: #E05A47;
+  --charcoal: #141414;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-sans), 'Plus Jakarta Sans', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Retro Editorial Typography */
+.font-display {
+  font-family: 'Fraunces', 'Playfair Display', Didot, Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+/* Watermark Outline Text */
+.text-outline {
+  -webkit-text-stroke: 1.5px rgba(234, 162, 34, 0.35);
+  color: transparent;
+}
+
+.text-outline-cream {
+  -webkit-text-stroke: 1.5px rgba(247, 244, 238, 0.2);
+  color: transparent;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar in retro tone */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--forest);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mustard);
+}
